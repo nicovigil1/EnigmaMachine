@@ -2,9 +2,13 @@
   "Unit Tests": {
     "coverage": {
       "/Users/Nico/turing/1module/Projects/enigma/lib/enigma.rb": [
-
+        1,
+        1,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1541096607
+    "timestamp": 1541096791
   }
 }
