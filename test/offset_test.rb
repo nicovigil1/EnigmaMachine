@@ -1,28 +1,33 @@
 require "./test/test_helper"
 
-class OffsetTest
-  def setup
-    @offset = Offset.new
-  end
+class OffsetTest < Minitest::Test
+  # def setup
+  #   @offset = Offset.new
+  # end
 
   def test_it_exists
-    assert_instance_of Offset, @offset
+    offset = Offset.new
+    assert_instance_of Offset, offset
   end
 
   def test_it_has_date
+    skip
     assert_equal Date, @offset.date
   end
 
   def test_it_has_alphabet
+    skip
     assert_equal 27, @offset.alphabet.length
     assert_equal "a", @offset.alphabet[0]
   end
 
   def test_it_has_a_key
+    skip
     assert_equal 12345, @offset.key
   end
 
   def test_it_has_gears
+    skip
     assert_equal 4, @offset.gears.length
     assert_equal 14, @offset.gears[0]
     assert_equal 25, @offset.gears[1]
