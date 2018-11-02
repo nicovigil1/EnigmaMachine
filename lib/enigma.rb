@@ -2,7 +2,7 @@
 
 class Enigma
   def initialize(message, key = nil, date = nil)
-    @message = message
+    # @message = message
   end
 
 end
