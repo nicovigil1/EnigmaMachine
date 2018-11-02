@@ -12,7 +12,7 @@ class OffsetTest < Minitest::Test
 
   def test_it_has_date
     assert_equal Date, @offset.date.class
-    assert_equal String, @offset.date_string.class
+    assert_equal Integer, @offset.date_int.class
   end
 
   def test_it_has_alphabet
