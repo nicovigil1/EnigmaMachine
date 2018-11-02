@@ -1,5 +1,8 @@
+
+
 class Enigma
-  def initialize
-  end 
+  def initialize(message, key = nil, date = nil)
+    @message = message
+  end
 
 end
