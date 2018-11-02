@@ -24,6 +24,15 @@ class OffsetTest < Minitest::Test
     assert_equal 12345, @offset.key
   end
 
+  def test_it_has_first_offset
+    assert_equal [12, 23, 34, 45], @offset.offset_1
+  end
+
+  def test_it_has_second_offset
+    skip
+    assert_equal [2, 3, 2, 4], @offset.offset_2
+  end
+
   def test_it_has_gears
     skip
     assert_equal 4, @offset.gears.length

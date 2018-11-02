@@ -8,10 +8,9 @@ class Offset
     @key = key
   end
 
-  def gears
-
-    gears = []
-    gear_1 = @key[0..1].to_i
-  end
+  # def gears
+  #   gears = []
+  #   gear_1 = @key[0..1].to_i
+  # end
 
 end
