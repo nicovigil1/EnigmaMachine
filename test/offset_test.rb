@@ -33,6 +33,10 @@ class OffsetTest < Minitest::Test
     assert_equal [3, 5, 5, 6], @offset.offset_2
   end
 
+  def test_it_has_total_offset
+    assert_equal [15, 28, 39, 51], @offset.total_offset
+  end
+
   def test_it_has_gears
     skip
     assert_equal 4, @offset.gears.length

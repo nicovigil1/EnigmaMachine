@@ -25,4 +25,6 @@ class Offset
     [gear_1, gear_2, gear_3, gear_4]
   end
 
+
+
 end
