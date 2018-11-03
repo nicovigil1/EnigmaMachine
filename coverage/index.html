@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_yellow.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_green.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-02T12:50:29-06:00">2018-11-02T12:50:29-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-02T12:58:27-06:00">2018-11-02T12:58:27-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">84.62%</span></span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.35
+         2.75
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>13</b> relevant lines. 
-    <span class="green"><b>11</b> lines covered</span> and
-    <span class="red"><b>2</b> lines missed </span>
+    <b>16</b> relevant lines. 
+    <span class="green"><b>16</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -62,12 +62,12 @@
       
       <tr>
         <td class="strong"><a href="#8521757829b84575a3454a8a8e0776ce3f545398" class="src_link" title="lib/offset.rb">lib/offset.rb</a></td>
-        <td class="yellow strong">81.82 %</td>
-        <td>17</td>
-        <td>11</td>
-        <td>9</td>
-        <td>2</td>
-        <td>2.6</td>
+        <td class="green strong">100.0 %</td>
+        <td>24</td>
+        <td>14</td>
+        <td>14</td>
+        <td>0</td>
+        <td>3.0</td>
       </tr>
       
     </tbody>
@@ -156,11 +156,11 @@
         <div class="source_table" id="8521757829b84575a3454a8a8e0776ce3f545398">
   <div class="header">
     <h3>lib/offset.rb</h3>
-    <h4><span class="yellow">81.82 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>9</b> lines covered</span> and
-      <span class="red"><b>2</b> lines missed.</span>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -191,28 +191,28 @@
           <code class="ruby">  def initialize(key, date = Date.today)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="5">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="5">
+          <span class="hits">8</span>
           
           <code class="ruby">    @date = date</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="6">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="6">
+          <span class="hits">8</span>
           
           <code class="ruby">    @date_int = @date.strftime(&quot;%d%m%y&quot;).to_i</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="7">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="7">
+          <span class="hits">8</span>
           
           <code class="ruby">    @alphabet = (&quot;a&quot;..&quot;z&quot;).to_a &lt;&lt; &quot; &quot;</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="8">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="8" data-linenumber="8">
+          <span class="hits">8</span>
           
-          <code class="ruby">    @key = key</code>
+          <code class="ruby">    @key = key.to_s</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -227,43 +227,85 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="11">
           
-          <code class="ruby">  def gears</code>
+          
+          <code class="ruby">  # def gears</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  #   gears = []</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
+        <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">    gears = []</code>
+          <code class="ruby">  #   gear_1 = @key[0..1].to_i</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
+        <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">    gear_1 = @key[0..1].to_i</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def offset_1</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    gear_1 = @key[0..1].to_i</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    gear_2 = @key[1..2].to_i</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    gear_3 = @key[2..3].to_i</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    gear_4 = @key[3..4].to_i</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    [gear_1, gear_2, gear_3, gear_4]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="never" data-hits="" data-linenumber="24">
           
           
           <code class="ruby">end</code>

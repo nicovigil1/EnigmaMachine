@@ -21,7 +21,7 @@ class OffsetTest < Minitest::Test
   end
 
   def test_it_has_a_key
-    assert_equal 12345, @offset.key
+    assert_equal "12345", @offset.key
   end
 
   def test_it_has_first_offset
