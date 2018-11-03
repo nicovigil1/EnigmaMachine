@@ -28,7 +28,12 @@ class EnigmaTest < Minitest::Test
   #   assert_equal Date.today, @enigma.date
   # end
 
+  def test_it_has_an_alphabet
+    assert_equal ("a".."z").to_a << " ", @enigma.alphabet
+  end
+
   def test_message_can_be_jumbled
+    skip
     assert_equal "keder ohulw", @enigma.word_jumble("hello world")
   end
 

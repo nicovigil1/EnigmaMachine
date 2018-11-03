@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-03T16:39:20-06:00">2018-11-03T16:39:20-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-03T16:54:11-06:00">2018-11-03T16:54:11-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">52.83%</span></span>
+    (<span class="covered_percent"><span class="red">48.08%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="green">
-         1.01
+       <span class="red">
+         1.0
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>3</b> files in total.
-    <b>53</b> relevant lines. 
-    <span class="green"><b>28</b> lines covered</span> and
-    <span class="red"><b>25</b> lines missed </span>
+    <b>52</b> relevant lines. 
+    <span class="green"><b>25</b> lines covered</span> and
+    <span class="red"><b>27</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -53,31 +53,31 @@
       <tr>
         <td class="strong"><a href="#3568c5a81b4e2184a4b67fbe2dce6f92caa1bc5d" class="src_link" title="lib/enigma.rb">lib/enigma.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>12</td>
+        <td>16</td>
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>1.9</td>
+        <td>2.3</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#d95f42d1d7ebbd5073c2be63416487b8750aca3a" class="src_link" title="lib/key.rb">lib/key.rb</a></td>
-        <td class="red strong">50.0 %</td>
+        <td class="red strong">57.14 %</td>
         <td>27</td>
         <td>14</td>
-        <td>7</td>
-        <td>7</td>
-        <td>1.1</td>
+        <td>8</td>
+        <td>6</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#8521757829b84575a3454a8a8e0776ce3f545398" class="src_link" title="lib/offset.rb">lib/offset.rb</a></td>
-        <td class="red strong">40.0 %</td>
-        <td>43</td>
-        <td>30</td>
-        <td>12</td>
-        <td>18</td>
-        <td>0.7</td>
+        <td class="red strong">27.59 %</td>
+        <td>42</td>
+        <td>29</td>
+        <td>8</td>
+        <td>21</td>
+        <td>0.3</td>
       </tr>
       
     </tbody>
@@ -137,37 +137,37 @@
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_reader :key, :date</code>
+          <code class="ruby">  attr_reader :key, :alphabet</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="7">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="8">
+          <span class="hits">5</span>
           
           <code class="ruby">    new_key = Key.new</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="9">
+          <span class="hits">5</span>
           
           <code class="ruby">    @key = new_key.generate_key</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="9">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="10">
+          <span class="hits">5</span>
           
-          <code class="ruby">    offset = Offset.new(@key)</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="10">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    @date = offset.date</code>
+          <code class="ruby">    @alphabet = (&quot;a&quot;..&quot;z&quot;).to_a &lt;&lt; &quot; &quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="11">
@@ -177,6 +177,30 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def word_jumble</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">end</code>
@@ -190,11 +214,11 @@
         <div class="source_table" id="d95f42d1d7ebbd5073c2be63416487b8750aca3a">
   <div class="header">
     <h3>lib/key.rb</h3>
-    <h4><span class="red">50.0 %</span> covered</h4>
+    <h4><span class="red">57.14 %</span> covered</h4>
     <div>
       <b>14</b> relevant lines. 
-      <span class="green"><b>7</b> lines covered</span> and
-      <span class="red"><b>7</b> lines missed.</span>
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>6</b> lines missed.</span>
     </div>
   </div>
   
@@ -219,14 +243,14 @@
           <code class="ruby">  def generate_key</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="4">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="4">
+          <span class="hits">5</span>
           
           <code class="ruby">    num = Random.new</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="5">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="5">
+          <span class="hits">5</span>
           
           <code class="ruby">    key = num.rand(1000..99_999)</code>
         </li>
@@ -237,14 +261,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="7">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="7">
+          <span class="hits">5</span>
           
           <code class="ruby">    if key.to_s.length == 4</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="8">
-          
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
           
           <code class="ruby">      key = &quot;0&quot; + key.to_s</code>
         </li>
@@ -255,8 +279,8 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="10">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
           
           <code class="ruby">      key.to_s</code>
         </li>
@@ -371,11 +395,11 @@
         <div class="source_table" id="8521757829b84575a3454a8a8e0776ce3f545398">
   <div class="header">
     <h3>lib/offset.rb</h3>
-    <h4><span class="red">40.0 %</span> covered</h4>
+    <h4><span class="red">27.59 %</span> covered</h4>
     <div>
-      <b>30</b> relevant lines. 
-      <span class="green"><b>12</b> lines covered</span> and
-      <span class="red"><b>18</b> lines missed.</span>
+      <b>29</b> relevant lines. 
+      <span class="green"><b>8</b> lines covered</span> and
+      <span class="red"><b>21</b> lines missed.</span>
     </div>
   </div>
   
@@ -412,229 +436,223 @@
           <code class="ruby">  def initialize(key, date = Date.today)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="6">
-          <span class="hits">3</span>
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
           
           <code class="ruby">    @date = date # when a different date is passed in it HAS to be date class</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="7">
-          <span class="hits">3</span>
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
           
           <code class="ruby">    @date_int = @date.strftime(&quot;%d%m%y&quot;).to_i</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="8">
-          <span class="hits">3</span>
+        <li class="missed" data-hits="0" data-linenumber="8">
           
-          <code class="ruby">    @alphabet = (&quot;a&quot;..&quot;z&quot;).to_a &lt;&lt; &quot; &quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="9">
-          <span class="hits">3</span>
           
           <code class="ruby">    @key = key</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
+        <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
           <code class="ruby">  def offset_1</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="13">
+        <li class="missed" data-hits="0" data-linenumber="12">
           
           
           <code class="ruby">    gear_1 = @key[0..1].to_i</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="14">
+        <li class="missed" data-hits="0" data-linenumber="13">
           
           
           <code class="ruby">    gear_2 = @key[1..2].to_i</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="15">
+        <li class="missed" data-hits="0" data-linenumber="14">
           
           
           <code class="ruby">    gear_3 = @key[2..3].to_i</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
+        <li class="missed" data-hits="0" data-linenumber="15">
           
           
           <code class="ruby">    gear_4 = @key[3..4].to_i</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="17">
+        <li class="missed" data-hits="0" data-linenumber="16">
           
           
           <code class="ruby">    [gear_1, gear_2, gear_3, gear_4]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
           <code class="ruby">  def offset_2</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="21">
+        <li class="missed" data-hits="0" data-linenumber="20">
           
           
           <code class="ruby">    squared_date = (@date_int**2).to_s[-4..-1]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="22">
+        <li class="missed" data-hits="0" data-linenumber="21">
           
           
           <code class="ruby">    gear_1 = squared_date[0].to_i</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="23">
+        <li class="missed" data-hits="0" data-linenumber="22">
           
           
           <code class="ruby">    gear_2 = squared_date[1].to_i</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="24">
+        <li class="missed" data-hits="0" data-linenumber="23">
           
           
           <code class="ruby">    gear_3 = squared_date[2].to_i</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="25">
+        <li class="missed" data-hits="0" data-linenumber="24">
           
           
           <code class="ruby">    gear_4 = squared_date[3].to_i</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="26">
+        <li class="missed" data-hits="0" data-linenumber="25">
           
           
           <code class="ruby">    [gear_1, gear_2, gear_3, gear_4]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
           <code class="ruby">  def total_offset</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="30">
+        <li class="missed" data-hits="0" data-linenumber="29">
           
           
           <code class="ruby">    offset_1.zip(offset_2).map do |numbers|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="31">
+        <li class="missed" data-hits="0" data-linenumber="30">
           
           
           <code class="ruby">      numbers[0] + numbers[1]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="32">
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="never" data-hits="" data-linenumber="32">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
           <code class="ruby">  def gears</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="36">
+        <li class="missed" data-hits="0" data-linenumber="35">
           
           
           <code class="ruby">    gear_1 = total_offset[0]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
+        <li class="missed" data-hits="0" data-linenumber="36">
           
           
           <code class="ruby">    gear_2 = total_offset[1]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="38">
+        <li class="missed" data-hits="0" data-linenumber="37">
           
           
           <code class="ruby">    gear_3 = total_offset[2]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="39">
+        <li class="missed" data-hits="0" data-linenumber="38">
           
           
           <code class="ruby">    gear_4 = total_offset[3]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="40">
+        <li class="missed" data-hits="0" data-linenumber="39">
           
           
           <code class="ruby">    [gear_1, gear_2, gear_3, gear_4]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="40">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby">end</code>

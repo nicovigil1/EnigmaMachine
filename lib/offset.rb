@@ -5,7 +5,6 @@ class Offset
   def initialize(key, date = Date.today)
     @date = date # when a different date is passed in it HAS to be date class
     @date_int = @date.strftime("%d%m%y").to_i
-    @alphabet = ("a".."z").to_a << " "
     @key = key
   end
 
