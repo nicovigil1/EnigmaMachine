@@ -28,4 +28,20 @@ class EnigmaTest < Minitest::Test
   #   assert_equal Date.today, @enigma.date
   # end
 
+  def test_message_can_be_jumbled
+    assert_equal "keder ohulw", @enigma.word_jumble("hello world")
+  end
+
+  def test_encrypt_can_encrypt_a_message_with_set_arguments
+    skip
+    @encrypt = @enegma.encrypt("hello world", "02715", "040895")
+    expected = {
+                encryption: "keder ohulw",
+                key: "02715",
+                date: "040895"
+               }
+
+    assert_equal expeted, @encrypt
+  end
+
 end
