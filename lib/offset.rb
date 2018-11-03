@@ -33,11 +33,11 @@ class Offset
   end
 
   def gears
-    gear_a = total_offset[0]
-    gear_b = total_offset[1]
-    gear_c = total_offset[2]
-    gear_d = total_offset[3]
-    [gear_a, gear_b, gear_c, gear_d]
+    gear_1 = total_offset[0]
+    gear_2 = total_offset[1]
+    gear_3 = total_offset[2]
+    gear_4 = total_offset[3]
+    [gear_1, gear_2, gear_3, gear_4]
   end
 
 end
