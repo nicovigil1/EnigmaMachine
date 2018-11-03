@@ -2,7 +2,8 @@ require "./test/test_helper"
 
 class OffsetTest < Minitest::Test
   def setup
-    @offset = Offset.new(12345)
+    @test_date = Date.new(1966, 6, 6)
+    @offset = Offset.new(12345, @test_date)
   end
 
   def test_it_exists
@@ -29,8 +30,7 @@ class OffsetTest < Minitest::Test
   end
 
   def test_it_has_second_offset
-    skip
-    assert_equal [2, 3, 2, 4], @offset.offset_2
+    assert_equal [3, 5, 5, 6], @offset.offset_2
   end
 
   def test_it_has_gears
