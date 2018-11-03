@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-03T15:08:10-06:00">2018-11-03T15:08:10-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-11-03T15:14:21-06:00">2018-11-03T15:14:21-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.75
+         13.09
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>26</b> relevant lines. 
-    <span class="green"><b>26</b> lines covered</span> and
+    <b>32</b> relevant lines. 
+    <span class="green"><b>32</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,11 +63,11 @@
       <tr>
         <td class="strong"><a href="#8521757829b84575a3454a8a8e0776ce3f545398" class="src_link" title="lib/offset.rb">lib/offset.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>36</td>
-        <td>24</td>
-        <td>24</td>
+        <td>43</td>
+        <td>30</td>
+        <td>30</td>
         <td>0</td>
-        <td>2.9</td>
+        <td>13.9</td>
       </tr>
       
     </tbody>
@@ -158,8 +158,8 @@
     <h3>lib/offset.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>24</b> relevant lines. 
-      <span class="green"><b>24</b> lines covered</span> and
+      <b>30</b> relevant lines. 
+      <span class="green"><b>30</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -185,184 +185,184 @@
           <code class="ruby">  attr_reader :date, :date_int, :alphabet, :key</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
           <code class="ruby">  def initialize(key, date = Date.today)</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="5">
+        <li class="covered" data-hits="9" data-linenumber="6">
           <span class="hits">9</span>
           
           <code class="ruby">    @date = date # when a different date is passed in it HAS to be date class</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="6">
+        <li class="covered" data-hits="9" data-linenumber="7">
           <span class="hits">9</span>
           
           <code class="ruby">    @date_int = @date.strftime(&quot;%d%m%y&quot;).to_i</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="7">
+        <li class="covered" data-hits="9" data-linenumber="8">
           <span class="hits">9</span>
           
           <code class="ruby">    @alphabet = (&quot;a&quot;..&quot;z&quot;).to_a &lt;&lt; &quot; &quot;</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="8">
+        <li class="covered" data-hits="9" data-linenumber="9">
           <span class="hits">9</span>
           
           <code class="ruby">    @key = key.to_s</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
+        <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
           <code class="ruby">  def offset_1</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="13">
+          <span class="hits">22</span>
           
           <code class="ruby">    gear_1 = @key[0..1].to_i</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="13">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="14">
+          <span class="hits">22</span>
           
           <code class="ruby">    gear_2 = @key[1..2].to_i</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="14">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="15">
+          <span class="hits">22</span>
           
           <code class="ruby">    gear_3 = @key[2..3].to_i</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="15">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="16">
+          <span class="hits">22</span>
           
           <code class="ruby">    gear_4 = @key[3..4].to_i</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="17">
+          <span class="hits">22</span>
           
           <code class="ruby">    [gear_1, gear_2, gear_3, gear_4]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
           <code class="ruby">  def offset_2</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="20">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="21">
+          <span class="hits">22</span>
           
           <code class="ruby">    squared_date = (@date_int**2).to_s[-4..-1]</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="22">
+          <span class="hits">22</span>
           
           <code class="ruby">    gear_1 = squared_date[0].to_i</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="22">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="23">
+          <span class="hits">22</span>
           
           <code class="ruby">    gear_2 = squared_date[1].to_i</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="23">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="24">
+          <span class="hits">22</span>
           
           <code class="ruby">    gear_3 = squared_date[2].to_i</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="24">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="25">
+          <span class="hits">22</span>
           
           <code class="ruby">    gear_4 = squared_date[3].to_i</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="25">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="22" data-linenumber="26">
+          <span class="hits">22</span>
           
           <code class="ruby">    [gear_1, gear_2, gear_3, gear_4]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="27">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="28">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="28">
           
-          <code class="ruby">  def total_offset</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="29">
           <span class="hits">1</span>
           
+          <code class="ruby">  def total_offset</code>
+        </li>
+      
+        <li class="covered" data-hits="21" data-linenumber="30">
+          <span class="hits">21</span>
+          
           <code class="ruby">    offset_1.zip(offset_2).map do |numbers|</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="30">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="84" data-linenumber="31">
+          <span class="hits">84</span>
           
           <code class="ruby">      numbers[0] + numbers[1]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby">    end </code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="33">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
@@ -371,13 +371,55 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def gears</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="36">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    gear_a = total_offset[0]</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="37">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    gear_b = total_offset[1]</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="38">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    gear_c = total_offset[2]</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="39">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    gear_d = total_offset[3]</code>
+        </li>
+      
+        <li class="covered" data-hits="5" data-linenumber="40">
+          <span class="hits">5</span>
+          
+          <code class="ruby">    [gear_a, gear_b, gear_c, gear_d]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="41">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="42">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="43">
           
           
           <code class="ruby">end</code>

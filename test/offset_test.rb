@@ -38,12 +38,11 @@ class OffsetTest < Minitest::Test
   end
 
   def test_it_has_gears
-    skip
     assert_equal 4, @offset.gears.length
     assert_equal 15, @offset.gears[0]
     assert_equal 28, @offset.gears[1]
     assert_equal 39, @offset.gears[2]
-    assert_equal 51, @offset.gears[2]
+    assert_equal 51, @offset.gears[3]
   end
 
 end

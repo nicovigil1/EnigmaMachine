@@ -1,6 +1,7 @@
 require "date"
 class Offset
   attr_reader :date, :date_int, :alphabet, :key
+
   def initialize(key, date = Date.today)
     @date = date # when a different date is passed in it HAS to be date class
     @date_int = @date.strftime("%d%m%y").to_i
@@ -28,9 +29,15 @@ class Offset
   def total_offset
     offset_1.zip(offset_2).map do |numbers|
       numbers[0] + numbers[1]
-    end 
+    end
   end
 
-
+  def gears
+    gear_a = total_offset[0]
+    gear_b = total_offset[1]
+    gear_c = total_offset[2]
+    gear_d = total_offset[3]
+    [gear_a, gear_b, gear_c, gear_d]
+  end
 
 end
