@@ -25,6 +25,12 @@ class Offset
     [gear_1, gear_2, gear_3, gear_4]
   end
 
+  def total_offset
+    offset_1.zip(offset_2).map do |numbers|
+      numbers[0] + numbers[1]
+    end 
+  end
+
 
 
 end
