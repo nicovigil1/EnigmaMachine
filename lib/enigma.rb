@@ -1,8 +1,10 @@
-
+require "./lib/offset"
+require "./lib/key"
 
 class Enigma
-  def initialize(message, key = nil, date = nil)
-    # @message = message
+  attr_reader :key
+  def initialize
+    new_key = Key.new
+    @key = new_key.generate_key
   end
-
 end

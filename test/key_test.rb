@@ -11,8 +11,8 @@ class KeyTest < Minitest::Test
 
   def test_it_can_generate_a_key
     key_range = (1000..99_999)
-    assert_equal String, @key.key.class
-    assert key_range.include?(@key.key.to_i)
+    assert_equal String, @key.generate_key.class
+    assert key_range.include?(@key.generate_key.to_i)
   end
 
   def test_it_can_generate_0_as_first_number
