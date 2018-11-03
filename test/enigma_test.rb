@@ -23,10 +23,9 @@ class EnigmaTest < Minitest::Test
   #   assert_equal "060666" @enigma.day
   # end
 
-  def test_it_can_convert_date_into_date_class
-    skip
-    assert_equal Date, @enigma.date.class
-    assert_equal "060666", @enigma.date.strftime("%d%m%y")
-  end
+  # def test_it_can_convert_date_into_date_class
+  #   assert_equal Date, @enigma.date.class
+  #   assert_equal Date.today, @enigma.date
+  # end
 
 end
