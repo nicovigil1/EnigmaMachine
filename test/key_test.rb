@@ -10,7 +10,6 @@ class KeyTest < Minitest::Test
   end
 
   def test_it_can_generate_a_key
-    skip
     key_range = (1000..99_999)
     assert_equal Integer, @key.key.class
     assert key_range.include?(@key.key)
