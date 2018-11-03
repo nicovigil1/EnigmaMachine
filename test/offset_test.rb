@@ -3,11 +3,11 @@ require "./test/test_helper"
 class OffsetTest < Minitest::Test
   def setup
     @test_date = Date.new(1966, 6, 6)
-    @offset = Offset.new(12345, @test_date)
+    @offset = Offset.new("12345", @test_date)
   end
 
   def test_it_exists
-    offset = Offset.new(12345)
+    offset = Offset.new("12345")
     assert_instance_of Offset, offset
   end
 
