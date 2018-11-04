@@ -43,8 +43,36 @@ class EnigmaTest < Minitest::Test
                 key: "02715",
                 date: "040895"
                }
-
     assert_equal expected, @encrypt
+  end
+
+  def test_it_can_reverse_gears
+    key = "02715"
+    date = "040895"
+    @enigma.set_offset(key, date)
+    assert_equal [-3, -27, -73, -20], @enigma.reverse_offset
+  end
+
+  def test_it_can_decrypt
+
+    expected = {
+                decryption: "hello world",
+                key: "02715",
+                date: "040895"
+               }
+    assert_equal expected, @enigma.decrypt("keder ohulw", "02715", "040895")
+  end
+
+  def test_it_can_take_2_arguments_for_en_and_de_cryption
+    expected = {:encryption=>"snddziogbuw", :key=>"02715", :date=>"031118"}
+    expected_2 = {:decryption=>"hello world", :key=>"02715", :date=>"031118"}
+    assert_equal expected, @enigma.encrypt("hello world", "02715")
+    assert_equal expected_2, @enigma.decrypt("snddziogbuw", "02715")
+  end
+
+  def test_it_can_take_one_argument_for_conversation
+    assert_equal 3, @enigma.encrypt("hello world").length
+    assert_equal 3, @enigma.decrypt("hello world").length
   end
 
 end
