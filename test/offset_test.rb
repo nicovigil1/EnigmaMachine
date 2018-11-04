@@ -2,23 +2,19 @@ require "./test/test_helper"
 
 class OffsetTest < Minitest::Test
   def setup
-    @test_date = Date.new(1966, 6, 6)
+    # @test_date = Date.new(1966, 6, 6)
+    @test_date = "060666"
     @offset = Offset.new("12345", @test_date)
   end
 
   def test_it_exists
-    offset = Offset.new("12345")
+    offset = Offset.new("12345", @test_date)
     assert_instance_of Offset, offset
   end
 
   def test_it_has_date
-    assert_equal Date, @offset.date.class
-    assert_equal Integer, @offset.date_int.class
-  end
-
-  def test_it_has_alphabet
-    assert_equal 27, @offset.alphabet.length
-    assert_equal "a", @offset.alphabet[0]
+    assert_equal 60666, @offset.date
+    assert_equal Integer, @offset.date.class
   end
 
   def test_it_has_a_key

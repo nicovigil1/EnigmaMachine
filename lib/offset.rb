@@ -1,10 +1,9 @@
 require "date"
 class Offset
-  attr_reader :date, :date_int, :alphabet, :key
+  attr_reader :date, :day, :date_int, :alphabet, :key
 
-  def initialize(key, date = Date.today)
-    @date = date # when a different date is passed in it HAS to be date class
-    @date_int = @date.strftime("%d%m%y").to_i
+  def initialize(key, date)
+    @date = date.to_i
     @key = key
   end
 
@@ -17,7 +16,7 @@ class Offset
   end
 
   def offset_2
-    squared_date = (@date_int**2).to_s[-4..-1]
+    squared_date = (@date**2).to_s[-4..-1]
     gear_1 = squared_date[0].to_i
     gear_2 = squared_date[1].to_i
     gear_3 = squared_date[2].to_i
