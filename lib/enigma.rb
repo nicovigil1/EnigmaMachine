@@ -20,9 +20,7 @@ class Enigma
   end
 
 
-  def word_jumble(phrase, key = @key, date = convert_date)
-    # offset = Offset.new(key, date) #make gears a class method(?)
-
+  def word_jumble(phrase)
     letters = phrase.downcase.chars
     letters.map do |letter| #helper method(?)
       if @alphabet.include?(letter)
@@ -41,9 +39,13 @@ class Enigma
     day.strftime("%d%m%y")
   end
 
-  def encrypt(phrase, key, date = convert_date)
-    word_jumble(phrase, key, date)
-
+  def encrypt(phrase, key = @key, date = convert_date)
+    set_offset(key, date)
+    display = {}
+    display[:encryption] = word_jumble(phrase)
+    display[:key] = key
+    display[:date] = date
+    display
   end
 
 
