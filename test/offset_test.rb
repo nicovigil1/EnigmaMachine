@@ -2,7 +2,6 @@ require "./test/test_helper"
 
 class OffsetTest < Minitest::Test
   def setup
-    # @test_date = Date.new(1966, 6, 6)
     @test_date = "060666"
     @offset = Offset.new("12345", @test_date)
   end
