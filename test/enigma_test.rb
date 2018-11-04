@@ -70,5 +70,9 @@ class EnigmaTest < Minitest::Test
     assert_equal expected_2, @enigma.decrypt("snddziogbuw", "02715")
   end
 
+  def test_it_can_take_one_argument_for_conversation
+    assert_equal 3, @enigma.encrypt("hello world").length
+    assert_equal 3, @enigma.decrypt("hello world").length
+  end
 
 end
