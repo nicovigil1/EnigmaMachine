@@ -36,7 +36,7 @@ class EnigmaTest < Minitest::Test
   def test_it_can_initialize_gears_for_encryption
     key = "02715"
     date = "040895"
-    assert_instance_of Offset, @enigma.gears(key, date)
+    assert_equal [3, 27, 73, 20], @enigma.gears(key, date)
   end
 
   def test_it_can_convert_date_into_date_class

@@ -13,6 +13,12 @@ class Enigma
 
   #still needs to have a default for the date that is today's date
 
+  def gears(key = @key, date = convert_date)
+    offset = Offset.new(key, date) #make gears a class method(?)
+    gears = offset.gears
+  end
+
+
   def word_jumble(phrase, key = @key, date = convert_date)
     offset = Offset.new(key, date) #make gears a class method(?)
     gears = offset.gears
