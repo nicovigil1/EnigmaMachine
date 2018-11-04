@@ -33,6 +33,17 @@ class EnigmaTest < Minitest::Test
     assert_equal "a", @enigma.alphabet[0]
   end
 
+  def test_it_can_initialize_gears_for_encryption
+    key = "02715"
+    date = "040895"
+    assert_instance_of Offset, @enigma.gears(key, date)
+  end
+
+  def test_it_can_convert_date_into_date_class
+    assert_equal 6, @enigma.convert_date.length
+    assert_equal String, @enigma.convert_date.class
+  end
+
   def test_message_can_be_jumbled
     assert_equal "keder ohulw!", @enigma.word_jumble("HeLlo WorLd!", "02715", "040895")
   end

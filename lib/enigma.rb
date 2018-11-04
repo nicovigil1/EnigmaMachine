@@ -13,7 +13,7 @@ class Enigma
 
   #still needs to have a default for the date that is today's date
 
-  def word_jumble(phrase, key = @key, date)
+  def word_jumble(phrase, key = @key, date = convert_date)
     offset = Offset.new(key, date) #make gears a class method(?)
     gears = offset.gears
     letters = phrase.downcase.chars
@@ -28,5 +28,16 @@ class Enigma
       end
     end.join
   end
+
+  def convert_date
+    day = Date.today
+    day.strftime("%d%m%y")
+  end
+
+  def encrypt(phrase, key, date = convert_date)
+    word_jumble(phrase, key, date)
+
+  end
+
 
 end
