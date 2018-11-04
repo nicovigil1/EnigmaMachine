@@ -9,24 +9,11 @@ class EnigmaTest < Minitest::Test
     assert_instance_of Enigma, @enigma
   end
 
-  # def test_it_can_take_a_message
-  #   assert_equal "how now brown cow ..end.." @enigma.message
-  # end #from the old spec - hold onto it for now
-
   def test_it_can_have_an_encrypt_key
     assert_instance_of Key, @enigma.new_key
     assert_equal String, @enigma.key.class
     assert_equal 5, @enigma.key.length
   end
-
-  # def test_it_has_a_day
-  #   assert_equal "060666" @enigma.day
-  # end
-
-  # def test_it_can_convert_date_into_date_class
-  #   assert_equal Date, @enigma.date.class
-  #   assert_equal Date.today, @enigma.date
-  # end
 
   def test_it_has_alphabet
     assert_equal 27, @enigma.alphabet.length
