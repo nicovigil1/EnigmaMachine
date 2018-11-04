@@ -2,7 +2,6 @@ require "./test/test_helper"
 
 class EnigmaTest < Minitest::Test
   def setup
-    message = "how now brown cow ..end.."
     @enigma = Enigma.new
   end
 
@@ -15,6 +14,7 @@ class EnigmaTest < Minitest::Test
   # end #from the old spec - hold onto it for now
 
   def test_it_can_have_an_encrypt_key
+    assert_instance_of Key, @enigma.new_key
     assert_equal String, @enigma.key.class
     assert_equal 5, @enigma.key.length
   end
@@ -28,13 +28,13 @@ class EnigmaTest < Minitest::Test
   #   assert_equal Date.today, @enigma.date
   # end
 
-  def test_it_has_an_alphabet
-    assert_equal ("a".."z").to_a << " ", @enigma.alphabet
+  def test_it_has_alphabet
+    assert_equal 27, @enigma.alphabet.length
+    assert_equal "a", @enigma.alphabet[0]
   end
 
   def test_message_can_be_jumbled
-    skip
-    assert_equal "keder ohulw", @enigma.word_jumble("hello world")
+    assert_equal "keder ohulw!", @enigma.word_jumble("HeLlo WorLd!", "02715", "040895")
   end
 
   def test_encrypt_can_encrypt_a_message_with_set_arguments
