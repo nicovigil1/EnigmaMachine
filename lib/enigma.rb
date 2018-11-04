@@ -9,25 +9,26 @@ class Enigma
     @new_key = Key.new
     @key = @new_key.generate_key
     @alphabet = ("a".."z").to_a << " "
+    @gears = nil
   end
 
   #still needs to have a default for the date that is today's date
 
-  def gears(key = @key, date = convert_date)
+  def set_offset(key = @key, date = convert_date)
     offset = Offset.new(key, date) #make gears a class method(?)
-    gears = offset.gears
+    @gears = offset.gears
   end
 
 
   def word_jumble(phrase, key = @key, date = convert_date)
-    offset = Offset.new(key, date) #make gears a class method(?)
-    gears = offset.gears
+    # offset = Offset.new(key, date) #make gears a class method(?)
+
     letters = phrase.downcase.chars
     letters.map do |letter| #helper method(?)
       if @alphabet.include?(letter)
         index = @alphabet.index(letter)
-        jumble = @alphabet.rotate(gears[0])
-        gears = gears.rotate(1)
+        jumble = @alphabet.rotate(@gears[0])
+        @gears = @gears.rotate(1)
         jumble[index]
       else
         letter
