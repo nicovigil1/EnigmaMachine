@@ -20,6 +20,4 @@ class EncryptTest < Minitest::Test
     assert_equal "12345", @encrypt.key
   end
 
-
-
 end
