@@ -49,9 +49,19 @@ class Enigma
   end
 
   def reverse_offset
-    @gears.map do |gear|
+    @gears = @gears.map do |gear|
       gear * -1
     end
+  end
+
+  def decrypt(phrase, key = @key, date = convert_date)
+    set_offset(key, date)
+    reverse_offset
+    display = {}
+    display[:decryption] = word_jumble(phrase)
+    display[:key] = key
+    display[:date] = date
+    display
   end
 
 
