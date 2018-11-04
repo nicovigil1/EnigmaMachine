@@ -48,6 +48,12 @@ class Enigma
     display
   end
 
+  def reverse_offset
+    @gears.map do |gear|
+      gear * -1
+    end
+  end
+
 
 
 end

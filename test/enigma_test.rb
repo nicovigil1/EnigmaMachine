@@ -50,10 +50,12 @@ class EnigmaTest < Minitest::Test
   def test_it_can_reverse_gears
     key = "02715"
     date = "040895"
-    assert_equal [-3, -27, -73, -20], @enigma.set_negative_offset
+    @enigma.set_offset(key, date)
+    assert_equal [-3, -27, -73, -20], @enigma.reverse_offset
   end
 
   def test_it_can_decrypt
+    skip
     expected = {
                 decryption: "keder ohulw",
                 key: "02715",
