@@ -64,8 +64,8 @@ class EnigmaTest < Minitest::Test
   end
 
   def test_it_can_take_2_arguments_for_en_and_de_cryption
-    expected = {:encryption=>"snddziogbuw", :key=>"02715", :date=>"031118"}
-    expected_2 = {:decryption=>"hello world", :key=>"02715", :date=>"031118"}
+    expected = {:encryption=>"snddziogbuw", :key=>"02715", :date=>@enigma.convert_date}
+    expected_2 = {:decryption=>"hello world", :key=>"02715", :date=>@enigma.convert_date}
     assert_equal expected, @enigma.encrypt("hello world", "02715")
     assert_equal expected_2, @enigma.decrypt("snddziogbuw", "02715")
   end
