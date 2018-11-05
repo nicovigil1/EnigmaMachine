@@ -1,5 +1,4 @@
 require "./lib/enigma"
-require "pry"
 
 message, encrypt = ARGV
 enigma = Enigma.new

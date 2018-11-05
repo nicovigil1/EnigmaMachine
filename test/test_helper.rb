@@ -8,4 +8,4 @@ require "pry"
 require "./lib/enigma"
 require "./lib/offset"
 require "./lib/key"
-require "./lib/encrypt"
+ 
