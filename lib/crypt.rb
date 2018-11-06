@@ -1,4 +1,5 @@
 class Crypt
+
   def word_jumble(phrase)
     letters = phrase.downcase.chars
     letters.map do |letter| #helper method(?)

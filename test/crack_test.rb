@@ -10,6 +10,7 @@ class CrackTest < Minitest::Test
 
   def test_it_exists
     assert_instance_of Crack, @crack
+    binding.pry
   end
 
   def test_it_can_take_an_encrypted_message
@@ -17,13 +18,11 @@ class CrackTest < Minitest::Test
   end
 
   def test_it_can_take_a_date
-    skip
     assert_equal "051118", @crack.date
   end
 
   def test_it_can_find_key_for_encrypted_message
-    skip
-    assert_equal "38867", @crack.key
+    assert_equal "38867", @crack.found_key
   end
 
   def test_it_can_decrypt_message
